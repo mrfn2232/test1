@@ -1,1 +1,949 @@
-dm1lc3M6Ly9ldzBLSUNBaWRpSTZJQ0l5SWl3TkNpQWdJbkJ6SWpvZ0ltbHlZVzVqWld4c01TSXNEUW9nSUNKaFpHUWlPaUFpY0dseWIzb3VabUZ5ZW1GdVpHVXRhWEpoYmk1bGRTSXNEUW9nSUNKd2IzSjBJam9nSWpJd09EY2lMQTBLSUNBaWFXUWlPaUFpTVdJNE56RXpNakF0WldFd015MDBNVEJtTFdJNVl6QXRZekkzWVRNelpXWmlZVFptSWl3TkNpQWdJbUZwWkNJNklDSXdJaXdOQ2lBZ0luTmplU0k2SUNKaGRYUnZJaXdOQ2lBZ0ltNWxkQ0k2SUNKbmNuQmpJaXdOQ2lBZ0luUjVjR1VpT2lBaWJtOXVaU0lzRFFvZ0lDSm9iM04wSWpvZ0lpSXNEUW9nSUNKd1lYUm9Jam9nSWxSeWRXVkRiM0I1SWl3TkNpQWdJblJzY3lJNklDSjBiSE1pTEEwS0lDQWljMjVwSWpvZ0ltMXlabTR1WTI5d2VXSmhjbUZpWVhKbFlYTnNMbmg1ZWlJc0RRb2dJQ0poYkhCdUlqb2dJaUlzRFFvZ0lDSm1jQ0k2SUNJaURRcDkNCnZsZXNzOi8vMWI4NzEzMjAtZWEwMy00MTBmLWI5YzAtYzI3YTMzZWZiYTZmQHBpcm96LmZhcnphbmRlLWlyYW4uZXU6MjA1Mz9lbmNyeXB0aW9uPW5vbmUmc2VjdXJpdHk9dGxzJnNuaT1tcmZuLmNvcHliYXJhYmFyZWFzbC54eXomdHlwZT1ncnBjJnNlcnZpY2VOYW1lPVRydWVDb3B5Jm1vZGU9Z3VuI2lyYW5jZWxsMg0Kdm1lc3M6Ly9ldzBLSUNBaWRpSTZJQ0l5SWl3TkNpQWdJbkJ6SWpvZ0ltbHlZVzVqWld4c015SXNEUW9nSUNKaFpHUWlPaUFpY0dseWIzb3VabUZ5ZW1GdVpHVXRhWEpoYmk1bGRTSXNEUW9nSUNKd2IzSjBJam9nSWpJd09ETWlMQTBLSUNBaWFXUWlPaUFpTVdJNE56RXpNakF0WldFd015MDBNVEJtTFdJNVl6QXRZekkzWVRNelpXWmlZVFptSWl3TkNpQWdJbUZwWkNJNklDSXdJaXdOQ2lBZ0luTmplU0k2SUNKaGRYUnZJaXdOQ2lBZ0ltNWxkQ0k2SUNKbmNuQmpJaXdOQ2lBZ0luUjVjR1VpT2lBaWJtOXVaU0lzRFFvZ0lDSm9iM04wSWpvZ0lpSXNEUW9nSUNKd1lYUm9Jam9nSW5CdmJtbHphR0V1YVhJaUxBMEtJQ0FpZEd4eklqb2dJblJzY3lJc0RRb2dJQ0p6Ym1raU9pQWliWEptYmk1amIzQjVZbUZ5WVdKaGNtVmhjMnd1ZUhsNklpd05DaUFnSW1Gc2NHNGlPaUFpSWl3TkNpQWdJbVp3SWpvZ0lpSU5DbjA9DQp2bGVzczovLzFiODcxMzIwLWVhMDMtNDEwZi1iOWMwLWMyN2EzM2VmYmE2ZkBwaXJvei5mYXJ6YW5kZS1pcmFuLmV1OjIwOTY/ZW5jcnlwdGlvbj1ub25lJnNlY3VyaXR5PXRscyZzbmk9bXJmbi5jb3B5YmFyYWJhcmVhc2wueHl6JnR5cGU9Z3JwYyZzZXJ2aWNlTmFtZT1UcnVlQ29weSZtb2RlPWd1biNpcmFuY2VsbDQNCnZtZXNzOi8vZXcwS0lDQWlkaUk2SUNJeUlpd05DaUFnSW5Ceklqb2dJbWx5WVc1alpXeHNOU0lzRFFvZ0lDSmhaR1FpT2lBaWNHbHliM291Wm1GeWVtRnVaR1V0YVhKaGJpNWxkU0lzRFFvZ0lDSndiM0owSWpvZ0lqSXdPRGNpTEEwS0lDQWlhV1FpT2lBaU1XSTROekV6TWpBdFpXRXdNeTAwTVRCbUxXSTVZekF0WXpJM1lUTXpaV1ppWVRabUlpd05DaUFnSW1GcFpDSTZJQ0l3SWl3TkNpQWdJbk5qZVNJNklDSmhkWFJ2SWl3TkNpQWdJbTVsZENJNklDSm5jbkJqSWl3TkNpQWdJblI1Y0dVaU9pQWlibTl1WlNJc0RRb2dJQ0pvYjNOMElqb2dJaUlzRFFvZ0lDSndZWFJvSWpvZ0lsUnlkV1ZEYjNCNUlpd05DaUFnSW5Sc2N5STZJQ0owYkhNaUxBMEtJQ0FpYzI1cElqb2dJbTF5Wm00dVkyOXdlV0poY21GaVlYSmxZWE5zTG5oNWVpSXNEUW9nSUNKaGJIQnVJam9nSWlJc0RRb2dJQ0ptY0NJNklDSWlEUXA5DQp2bGVzczovLzFiODcxMzIwLWVhMDMtNDEwZi1iOWMwLWMyN2EzM2VmYmE2ZkBwaXJvei5mYXJ6YW5kZS1pcmFuLmV1OjIwNTM/ZW5jcnlwdGlvbj1ub25lJnNlY3VyaXR5PXRscyZzbmk9bXJmbi5jb3B5YmFyYWJhcmVhc2wueHl6JnR5cGU9Z3JwYyZzZXJ2aWNlTmFtZT1UcnVlQ29weSZtb2RlPWd1biNpcmFuY2VsbDYNCnZtZXNzOi8vZXcwS0lDQWlkaUk2SUNJeUlpd05DaUFnSW5Ceklqb2dJbWx5WVc1alpXeHNOeUlzRFFvZ0lDSmhaR1FpT2lBaWNHbHliM291Wm1GeWVtRnVaR1V0YVhKaGJpNWxkU0lzRFFvZ0lDSndiM0owSWpvZ0lqSXdPRE1pTEEwS0lDQWlhV1FpT2lBaU1XSTROekV6TWpBdFpXRXdNeTAwTVRCbUxXSTVZekF0WXpJM1lUTXpaV1ppWVRabUlpd05DaUFnSW1GcFpDSTZJQ0l3SWl3TkNpQWdJbk5qZVNJNklDSmhkWFJ2SWl3TkNpQWdJbTVsZENJNklDSm5jbkJqSWl3TkNpQWdJblI1Y0dVaU9pQWlibTl1WlNJc0RRb2dJQ0pvYjNOMElqb2dJaUlzRFFvZ0lDSndZWFJvSWpvZ0luQnZibWx6YUdFdWFYSWlMQTBLSUNBaWRHeHpJam9nSW5Sc2N5SXNEUW9nSUNKemJta2lPaUFpYlhKbWJpNWpiM0I1WW1GeVlXSmhjbVZoYzJ3dWVIbDZJaXdOQ2lBZ0ltRnNjRzRpT2lBaUlpd05DaUFnSW1ad0lqb2dJaUlOQ24wPQ0Kdmxlc3M6Ly8xYjg3MTMyMC1lYTAzLTQxMGYtYjljMC1jMjdhMzNlZmJhNmZAcGlyb3ouZmFyemFuZGUtaXJhbi5ldToyMDk2P2VuY3J5cHRpb249bm9uZSZzZWN1cml0eT10bHMmc25pPW1yZm4uY29weWJhcmFiYXJlYXNsLnh5eiZ0eXBlPWdycGMmc2VydmljZU5hbWU9VHJ1ZUNvcHkmbW9kZT1ndW4jaXJhbmNlbGw4DQp2bWVzczovL2V3MEtJQ0FpZGlJNklDSXlJaXdOQ2lBZ0luQnpJam9nSW1GMllXd3hJaXdOQ2lBZ0ltRmtaQ0k2SUNKa2FYTmpiM0prTG1OdmJTSXNEUW9nSUNKd2IzSjBJam9nSWpJd09EY2lMQTBLSUNBaWFXUWlPaUFpTVdJNE56RXpNakF0WldFd015MDBNVEJtTFdJNVl6QXRZekkzWVRNelpXWmlZVFptSWl3TkNpQWdJbUZwWkNJNklDSXdJaXdOQ2lBZ0luTmplU0k2SUNKaGRYUnZJaXdOQ2lBZ0ltNWxkQ0k2SUNKbmNuQmpJaXdOQ2lBZ0luUjVjR1VpT2lBaWJtOXVaU0lzRFFvZ0lDSm9iM04wSWpvZ0lpSXNEUW9nSUNKd1lYUm9Jam9nSWxSeWRXVkRiM0I1SWl3TkNpQWdJblJzY3lJNklDSjBiSE1pTEEwS0lDQWljMjVwSWpvZ0ltMXlabTR1Wm1GeWVtRnVaR1V0YVhKaGJpNWxkU0lzRFFvZ0lDSmhiSEJ1SWpvZ0lpSXNEUW9nSUNKbWNDSTZJQ0lpRFFwOQ0Kdmxlc3M6Ly8xYjg3MTMyMC1lYTAzLTQxMGYtYjljMC1jMjdhMzNlZmJhNmZAZGlzY29yZC5jb206MjA1Mz9lbmNyeXB0aW9uPW5vbmUmc2VjdXJpdHk9dGxzJnNuaT1tcmZuLmZhcnphbmRlLWlyYW4uZXUmdHlwZT1ncnBjJnNlcnZpY2VOYW1lPVRydWVDb3B5Jm1vZGU9Z3VuI2F2YWwyJTA5DQp2bWVzczovL2V3MEtJQ0FpZGlJNklDSXlJaXdOQ2lBZ0luQnpJam9nSW1GMllXd3pJaXdOQ2lBZ0ltRmtaQ0k2SUNKa2FYTmpiM0prTG1OdmJTSXNEUW9nSUNKd2IzSjBJam9nSWpJd09ETWlMQTBLSUNBaWFXUWlPaUFpTVdJNE56RXpNakF0WldFd015MDBNVEJtTFdJNVl6QXRZekkzWVRNelpXWmlZVFptSWl3TkNpQWdJbUZwWkNJNklDSXdJaXdOQ2lBZ0luTmplU0k2SUNKaGRYUnZJaXdOQ2lBZ0ltNWxkQ0k2SUNKbmNuQmpJaXdOQ2lBZ0luUjVjR1VpT2lBaWJtOXVaU0lzRFFvZ0lDSm9iM04wSWpvZ0lpSXNEUW9nSUNKd1lYUm9Jam9nSW5CdmJtbHphR0V1YVhJaUxBMEtJQ0FpZEd4eklqb2dJblJzY3lJc0RRb2dJQ0p6Ym1raU9pQWliWEptYmk1bVlYSjZZVzVrWlMxcGNtRnVMbVYxSWl3TkNpQWdJbUZzY0c0aU9pQWlJaXdOQ2lBZ0ltWndJam9nSWlJTkNuMD0NCnZsZXNzOi8vMWI4NzEzMjAtZWEwMy00MTBmLWI5YzAtYzI3YTMzZWZiYTZmQGRpc2NvcmQuY29tOjIwOTY/ZW5jcnlwdGlvbj1ub25lJnNlY3VyaXR5PXRscyZzbmk9bXJmbi5mYXJ6YW5kZS1pcmFuLmV1JnR5cGU9Z3JwYyZzZXJ2aWNlTmFtZT1UcnVlQ29weSZtb2RlPWd1biNhdmFsNA0Kdm1lc3M6Ly9ldzBLSUNBaWRpSTZJQ0l5SWl3TkNpQWdJbkJ6SWpvZ0ltRjJZV3cxSWl3TkNpQWdJbUZrWkNJNklDSmthWE5qYjNKa0xtTnZiU0lzRFFvZ0lDSndiM0owSWpvZ0lqSXdPRGNpTEEwS0lDQWlhV1FpT2lBaU1XSTROekV6TWpBdFpXRXdNeTAwTVRCbUxXSTVZekF0WXpJM1lUTXpaV1ppWVRabUlpd05DaUFnSW1GcFpDSTZJQ0l3SWl3TkNpQWdJbk5qZVNJNklDSmhkWFJ2SWl3TkNpQWdJbTVsZENJNklDSm5jbkJqSWl3TkNpQWdJblI1Y0dVaU9pQWlibTl1WlNJc0RRb2dJQ0pvYjNOMElqb2dJaUlzRFFvZ0lDSndZWFJvSWpvZ0lsUnlkV1ZEYjNCNUlpd05DaUFnSW5Sc2N5STZJQ0owYkhNaUxBMEtJQ0FpYzI1cElqb2dJbTF5Wm00dVptRnllbUZ1WkdVdGFYSmhiaTVsZFNJc0RRb2dJQ0poYkhCdUlqb2dJaUlzRFFvZ0lDSm1jQ0k2SUNJaURRcDkNCnZsZXNzOi8vMWI4NzEzMjAtZWEwMy00MTBmLWI5YzAtYzI3YTMzZWZiYTZmQGRpc2NvcmQuY29tOjIwNTM/ZW5jcnlwdGlvbj1ub25lJnNlY3VyaXR5PXRscyZzbmk9bXJmbi5mYXJ6YW5kZS1pcmFuLmV1JnR5cGU9Z3JwYyZzZXJ2aWNlTmFtZT1UcnVlQ29weSZtb2RlPWd1biNhdmFsNg0Kdm1lc3M6Ly9ldzBLSUNBaWRpSTZJQ0l5SWl3TkNpQWdJbkJ6SWpvZ0ltRjJZV3czSWl3TkNpQWdJbUZrWkNJNklDSmthWE5qYjNKa0xtTnZiU0lzRFFvZ0lDSndiM0owSWpvZ0lqSXdPRE1pTEEwS0lDQWlhV1FpT2lBaU1XSTROekV6TWpBdFpXRXdNeTAwTVRCbUxXSTVZekF0WXpJM1lUTXpaV1ppWVRabUlpd05DaUFnSW1GcFpDSTZJQ0l3SWl3TkNpQWdJbk5qZVNJNklDSmhkWFJ2SWl3TkNpQWdJbTVsZENJNklDSm5jbkJqSWl3TkNpQWdJblI1Y0dVaU9pQWlibTl1WlNJc0RRb2dJQ0pvYjNOMElqb2dJaUlzRFFvZ0lDSndZWFJvSWpvZ0luQnZibWx6YUdFdWFYSWlMQTBLSUNBaWRHeHpJam9nSW5Sc2N5SXNEUW9nSUNKemJta2lPaUFpYlhKbWJpNW1ZWEo2WVc1a1pTMXBjbUZ1TG1WMUlpd05DaUFnSW1Gc2NHNGlPaUFpSWl3TkNpQWdJbVp3SWpvZ0lpSU5DbjA9DQp2bGVzczovLzFiODcxMzIwLWVhMDMtNDEwZi1iOWMwLWMyN2EzM2VmYmE2ZkBkaXNjb3JkLmNvbToyMDk2P2VuY3J5cHRpb249bm9uZSZzZWN1cml0eT10bHMmc25pPW1yZm4uZmFyemFuZGUtaXJhbi5ldSZ0eXBlPWdycGMmc2VydmljZU5hbWU9VHJ1ZUNvcHkmbW9kZT1ndW4jYXZhbDgNCg==
+{
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "127.0.0.1",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v2ray.cool",
+            "port": 10086,
+            "users": [
+              {
+                "id": "a3482e88-686a-4a58-8126-99c9df64b7bf",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ],
+        "servers": [
+          {
+            "address": "v2ray.cool",
+            "method": "chacha20",
+            "ota": false,
+            "password": "123456",
+            "port": 10086,
+            "level": 1
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": 0
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      }
+    },
+    {
+      "tag": "p06722998",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v2ray.cool",
+            "port": 10086,
+            "users": [
+              {
+                "id": "a3482e88-686a-4a58-8126-99c9df64b7bf",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ],
+        "servers": [
+          {
+            "address": "v2ray.cool",
+            "method": "chacha20",
+            "ota": false,
+            "password": "123456",
+            "port": 10086,
+            "level": 1
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": 0
+      }
+    },
+    {
+      "tag": "p19220873",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v2ray.cool",
+            "port": 10086,
+            "users": [
+              {
+                "id": "a3482e88-686a-4a58-8126-99c9df64b7bf",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ],
+        "servers": [
+          {
+            "address": "v2ray.cool",
+            "method": "chacha20",
+            "ota": false,
+            "password": "123456",
+            "port": 10086,
+            "level": 1
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": 0
+      }
+    },
+    {
+      "tag": "p5325026316515438792",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "10.54--2024.02.14.time",
+            "method": "chacha20",
+            "ota": false,
+            "password": "1",
+            "port": 1054,
+            "level": 1,
+            "flow": ""
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "fake_ip_for_sub_link",
+          "show": false
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "p5074719034097305261",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "newpastest.privatedns.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "0a1e7b2c-dd8c-42b0-a5ce-eaa882a699d2",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "newpastest.privatedns.org",
+          "alpn": [
+            "h2"
+          ],
+          "fingerprint": "chrome",
+          "show": false
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "p5756066280287223062",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "newpastest.privatedns.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "0a1e7b2c-dd8c-42b0-a5ce-eaa882a699d2",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "newpastest.privatedns.org",
+          "alpn": [
+            "h2"
+          ],
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/jbbNORWolnwPb1vMifMqWD",
+          "headers": {
+            "Host": "newpastest.privatedns.org"
+          }
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "p5219045277737784658",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "newpastest.privatedns.org",
+            "method": "chacha20",
+            "ota": false,
+            "password": "0a1e7b2c-dd8c-42b0-a5ce-eaa882a699d2",
+            "port": 443,
+            "level": 1,
+            "flow": ""
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "newpastest.privatedns.org",
+          "alpn": [
+            "h2"
+          ],
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/qFt9uaSrKwPb1vMifMqWD",
+          "headers": {
+            "Host": "newpastest.privatedns.org"
+          }
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "p4919366587128594363",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "newpastest.privatedns.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "0a1e7b2c-dd8c-42b0-a5ce-eaa882a699d2",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "chacha20-poly1305"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "newpastest.privatedns.org",
+          "alpn": [
+            "h2"
+          ],
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/73otueVOgawPb1vMifMqWD",
+          "headers": {
+            "Host": "newpastest.privatedns.org"
+          }
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "p5727217831368923400",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "newpastest.privatedns.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "0a1e7b2c-dd8c-42b0-a5ce-eaa882a699d2",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "newpastest.privatedns.org",
+          "alpn": [
+            "h2"
+          ],
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "grpcSettings": {
+          "serviceName": "jbbNORWolnhCLMQNFM",
+          "multiMode": false,
+          "idle_timeout": 60,
+          "health_check_timeout": 20,
+          "permit_without_stream": false,
+          "initial_windows_size": 0
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "p5185342358901630190",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "newpastest.privatedns.org",
+            "method": "chacha20",
+            "ota": false,
+            "password": "0a1e7b2c-dd8c-42b0-a5ce-eaa882a699d2",
+            "port": 443,
+            "level": 1,
+            "flow": ""
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "newpastest.privatedns.org",
+          "alpn": [
+            "h2"
+          ],
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "grpcSettings": {
+          "serviceName": "qFt9uaSrKhCLMQNFM",
+          "multiMode": false,
+          "idle_timeout": 60,
+          "health_check_timeout": 20,
+          "permit_without_stream": false,
+          "initial_windows_size": 0
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "p5594275410219092205",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "newpastest.privatedns.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "0a1e7b2c-dd8c-42b0-a5ce-eaa882a699d2",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "chacha20-poly1305"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "newpastest.privatedns.org",
+          "alpn": [
+            "h2"
+          ],
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "grpcSettings": {
+          "serviceName": "73otueVOgahCLMQNFM",
+          "multiMode": false,
+          "idle_timeout": 60,
+          "health_check_timeout": 20,
+          "permit_without_stream": false,
+          "initial_windows_size": 0
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "p4623455093606821206",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "newpastest.privatedns.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "0a1e7b2c-dd8c-42b0-a5ce-eaa882a699d2",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "newpastest.privatedns.org",
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "show": false
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "p5353291897660994605",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "newpastest.privatedns.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "0a1e7b2c-dd8c-42b0-a5ce-eaa882a699d2",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "newpastest.privatedns.org",
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/jbbNORWolnwPb1vMifMqWD",
+          "headers": {
+            "Host": "newpastest.privatedns.org"
+          }
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "p4659181616558246244",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "newpastest.privatedns.org",
+            "method": "chacha20",
+            "ota": false,
+            "password": "0a1e7b2c-dd8c-42b0-a5ce-eaa882a699d2",
+            "port": 443,
+            "level": 1,
+            "flow": ""
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "newpastest.privatedns.org",
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/qFt9uaSrKwPb1vMifMqWD",
+          "headers": {
+            "Host": "newpastest.privatedns.org"
+          }
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "p5260455903348725443",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "newpastest.privatedns.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "0a1e7b2c-dd8c-42b0-a5ce-eaa882a699d2",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "chacha20-poly1305"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "newpastest.privatedns.org",
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/73otueVOgawPb1vMifMqWD",
+          "headers": {
+            "Host": "newpastest.privatedns.org"
+          }
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "p4692002666491260672",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "newpastest.privatedns.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "0a1e7b2c-dd8c-42b0-a5ce-eaa882a699d2",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "newpastest.privatedns.org",
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "grpcSettings": {
+          "serviceName": "jbbNORWolnhCLMQNFM",
+          "multiMode": false,
+          "idle_timeout": 60,
+          "health_check_timeout": 20,
+          "permit_without_stream": false,
+          "initial_windows_size": 0
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "p5568899794523790060",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "newpastest.privatedns.org",
+            "method": "chacha20",
+            "ota": false,
+            "password": "0a1e7b2c-dd8c-42b0-a5ce-eaa882a699d2",
+            "port": 443,
+            "level": 1,
+            "flow": ""
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "newpastest.privatedns.org",
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "grpcSettings": {
+          "serviceName": "qFt9uaSrKhCLMQNFM",
+          "multiMode": false,
+          "idle_timeout": 60,
+          "health_check_timeout": 20,
+          "permit_without_stream": false,
+          "initial_windows_size": 0
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "p4681787398091252971",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "newpastest.privatedns.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "0a1e7b2c-dd8c-42b0-a5ce-eaa882a699d2",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "chacha20-poly1305"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "newpastest.privatedns.org",
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "grpcSettings": {
+          "serviceName": "73otueVOgahCLMQNFM",
+          "multiMode": false,
+          "idle_timeout": 60,
+          "health_check_timeout": 20,
+          "permit_without_stream": false,
+          "initial_windows_size": 0
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "p5097032636298624599",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "newpastest.privatedns.org",
+            "port": 80,
+            "users": [
+              {
+                "id": "0a1e7b2c-dd8c-42b0-a5ce-eaa882a699d2",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "chacha20-poly1305"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/73otueVOgawPb1vMifMqWD",
+          "headers": {
+            "Host": "newpastest.privatedns.org"
+          }
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    }
+  ],
+  "dns": {
+    "servers": [
+      "1.1.1.1",
+      "8.8.8.8"
+    ]
+  },
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "api"
+        ],
+        "outboundTag": "api",
+        "enabled": true
+      },
+      {
+        "id": "5344283708821112549",
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+          "domain:example.com",
+          "domain:example2.com"
+        ],
+        "enabled": true
+      },
+      {
+        "id": "5613127965418079503",
+        "type": "field",
+        "outboundTag": "block",
+        "domain": [
+          "geosite:category-ads-all"
+        ],
+        "enabled": true
+      },
+      {
+        "id": "5347377324096573763",
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+          "geosite:private",
+          "geosite:apple@cn",
+          "geosite:google@cn",
+          "geosite:tld-cn",
+          "tld-ir"
+        ],
+        "enabled": true
+      },
+      {
+        "id": "4961323427585877615",
+        "type": "field",
+        "balancerTag": "balancer",
+        "domain": [
+          "geoip:!ir"
+        ],
+        "enabled": true
+      },
+      {
+        "id": "4681808672589259800",
+        "type": "field",
+        "outboundTag": "direct",
+        "ip": [
+          "geoip:private",
+          "geoip:cn",
+          "geoip:ir"
+        ],
+        "enabled": true
+      },
+      {
+        "id": "5602879121129995014",
+        "type": "field",
+        "port": "0-65535",
+        "balancerTag": "balancer",
+        "enabled": true
+      }
+    ],
+    "balancers": [
+      {
+        "tag": "balancer",
+        "selector": [
+          "p5325026316515438792",
+          "p5074719034097305261",
+          "p5756066280287223062",
+          "p5219045277737784658",
+          "p4919366587128594363",
+          "p5727217831368923400",
+          "p5185342358901630190",
+          "p5594275410219092205",
+          "p4623455093606821206",
+          "p5353291897660994605",
+          "p4659181616558246244",
+          "p5260455903348725443",
+          "p4692002666491260672",
+          "p5568899794523790060",
+          "p4681787398091252971",
+          "p5097032636298624599"
+        ],
+        "strategy": {
+          "type": "optimal",
+          "settings": {
+            "timeout": 10000,
+            "interval": 30000,
+            "url": "https://about.google",
+            "count": 3,
+            "accept_little_diff": true,
+            "load_balancing": false,
+            "diff_percent": 0.5
+          }
+        }
+      }
+    ]
+  }
+}
